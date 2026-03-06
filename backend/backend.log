@@ -1,0 +1,123 @@
+
+> backend@1.0.0 start
+> node index.js
+
+[dotenv@17.3.1] injecting env (5) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Backend server running at http://localhost:3001
+✅ Connected to Database!
+Insert error: Error: Unknown column 'retailer_id' in 'field list'
+    at Packet.asError (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packets/packet.js:756:17)
+    at Query.execute (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'retailer_id' in 'field list'",
+  sql: '\n' +
+    '      INSERT INTO payments (\n' +
+    '        id, retailer_id, retailer_name, contact_number, address,\n' +
+    '        amount_given, final_balance, payment_method, payment_status, payment_date\n' +
+    "      ) VALUES ('ce7624d4-d5a6-415a-919f-f9061980fc61', '4cdafbaa-7d79-42d2-a394-209ba15fadd7', 'Gourav Kumar Agarwal', '06203067668', 'Room no. 21 , Plot no. 510 , Mittal\\'s Residency, New Rajiv Gandhi Nagar , kota', 3232323, -3229091, 'cash', NULL, '2026-03-06')\n" +
+    '    '
+}
+Insert error: Error: Unknown column 'retailer_id' in 'field list'
+    at Packet.asError (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packets/packet.js:756:17)
+    at Query.execute (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'retailer_id' in 'field list'",
+  sql: '\n' +
+    '      INSERT INTO payments (\n' +
+    '        id, retailer_id, retailer_name, contact_number, address,\n' +
+    '        amount_given, final_balance, payment_method, payment_status, payment_date\n' +
+    "      ) VALUES ('22b79ad1-2368-4af6-899b-2adbd81196cd', '4cdafbaa-7d79-42d2-a394-209ba15fadd7', 'Gourav Kumar Agarwal', '06203067668', 'Room no. 21 , Plot no. 510 , Mittal\\'s Residency, New Rajiv Gandhi Nagar , kota', 3, 3229, 'cash', NULL, '2026-03-06')\n" +
+    '    '
+}
+Insert error: Error: Unknown column 'retailer_id' in 'field list'
+    at Packet.asError (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packets/packet.js:756:17)
+    at Query.execute (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'retailer_id' in 'field list'",
+  sql: '\n' +
+    '      INSERT INTO payments (\n' +
+    '        id, retailer_id, retailer_name, contact_number, address,\n' +
+    '        amount_given, final_balance, payment_method, payment_status, payment_date\n' +
+    "      ) VALUES ('3cedfbe5-19f6-4639-a183-02c3a8def0ae', '4cdafbaa-7d79-42d2-a394-209ba15fadd7', 'Gourav Kumar Agarwal', '06203067668', 'Room no. 21 , Plot no. 510 , Mittal\\'s Residency, New Rajiv Gandhi Nagar , kota', 3, 3229, 'cash', NULL, '2026-03-06')\n" +
+    '    '
+}
+Insert error: Error: Unknown column 'retailer_id' in 'field list'
+    at Packet.asError (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packets/packet.js:756:17)
+    at Query.execute (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'retailer_id' in 'field list'",
+  sql: '\n' +
+    '      INSERT INTO purchases (\n' +
+    '        id, retailer_id, retailer_name, contact_number,\n' +
+    '        purchase_id, amount, purchase_date, final_balance\n' +
+    "      ) VALUES ('0270aa96-d4f2-4bb6-a7b8-57aaac565db5', '4cdafbaa-7d79-42d2-a394-209ba15fadd7', 'Gourav Kumar Agarwal', '06203067668', 'wf', '333333', '2025-03-06', 336565)\n" +
+    '    '
+}
+Transaction fetch error: Error: Unknown column 'amount_given' in 'field list'
+    at Packet.asError (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packets/packet.js:756:17)
+    at Query.execute (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/commands/command.js:29:26)
+    at Connection.handlePacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/gourav/Projects/Distributor-management-system/backend/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'amount_given' in 'field list'",
+  sql: '\n' +
+    '      (\n' +
+    "        SELECT id AS txn_id, payment_date AS date, 'Payment' AS type, amount_given AS amount, final_balance\n" +
+    "        FROM payments WHERE retailer_id = '4cdafbaa-7d79-42d2-a394-209ba15fadd7'\n" +
+    '      )\n' +
+    '      UNION ALL\n' +
+    '      (\n' +
+    "        SELECT id AS txn_id, purchase_date AS date, 'Purchase' AS type, amount AS amount, final_balance\n" +
+    "        FROM purchases WHERE retailer_id = '4cdafbaa-7d79-42d2-a394-209ba15fadd7'\n" +
+    '      )\n' +
+    '      ORDER BY date DESC\n' +
+    '    '
+}

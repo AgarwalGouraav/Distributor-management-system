@@ -24,7 +24,7 @@ const AddPurchase = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/purchases", purchase);
+      const res = await axios.post("http://localhost:3001/api/purchases", purchase);
       console.log("Purchase Recorded:", res.data);
       alert("Purchase recorded successfully!");
       setPurchase({ retailerName: "", contactNumber: "", purchaseId: "", amount: "", date: new Date().toISOString().split("T")[0] });

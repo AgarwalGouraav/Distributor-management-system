@@ -19,7 +19,7 @@ const AddRetailer = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/retailers", retailer);
+      const res = await axios.post("http://localhost:3001/api/retailers", retailer);
       console.log("Retailer added:", res.data);
       alert("Retailer successfully added!");
 

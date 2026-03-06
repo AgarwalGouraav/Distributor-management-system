@@ -14,7 +14,7 @@ const TransactionHistory = () => {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/transaction-history", {
+      const res = await axios.post("http://localhost:3001/api/transaction-history", {
         retailer_name: name,
         contact_number: phone,
       });
@@ -28,7 +28,7 @@ const TransactionHistory = () => {
 
   const fetchAllRetailers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/all-retailers");
+      const res = await axios.get("http://localhost:3001/api/all-retailers");
       setAllRetailers(res.data);
       setShowAll(true);
       setRetailer(null);
@@ -40,7 +40,7 @@ const TransactionHistory = () => {
 
   const viewRetailerTransactions = async (retailerId) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/transactions/${retailerId}`);
+      const res = await axios.get(`http://localhost:3001/api/transactions/${retailerId}`);
       setRetailer(res.data.retailerDetails);
       setHistory(res.data.transactions);
       setShowAll(false);

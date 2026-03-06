@@ -11,7 +11,7 @@ const GetHistory = () => {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/transaction-history", {
+      const res = await axios.post("http://localhost:3001/api/transaction-history", {
         retailer_name: name,
         contact_number: phone,
       });

@@ -11,7 +11,7 @@ const RetailerTransactions = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/transactions/${retailerId}`);
+        const res = await axios.get(`http://localhost:3001/api/transactions/${retailerId}`);
         setRetailer(res.data.retailerDetails);
         setHistory(res.data.transactions || []);
       } catch (err) {

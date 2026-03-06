@@ -10,7 +10,7 @@ const AllRetailers = () => {
   useEffect(() => {
     const fetchAllRetailers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/all-retailers");
+        const res = await axios.get("http://localhost:3001/api/all-retailers");
         setAllRetailers(res.data);
       } catch (err) {
         alert("Failed to fetch retailers");
